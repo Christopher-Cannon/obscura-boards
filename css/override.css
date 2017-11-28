@@ -1,0 +1,98 @@
+/* Set everything to use border-box model */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-text-size-adjust:none;
+  -moz-text-size-adjust:none;
+  -ms-text-size-adjust:none;
+  box-sizing: border-box;
+  height:100%;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+}
+
+body {
+  background-color:#19191b;
+  color:#d9d9d9;
+  font-family:'Rubik', sans-serif;
+}
+
+input, textarea {
+  font-family:'Rubik', sans-serif;
+}
+
+/* Medium and small only */
+@media screen and (max-width: 63.9375em) {
+  input, textarea {
+    font-size:2em
+  }
+
+  h1 {
+    font-size:4.2em;
+  }
+
+  h2 {
+    font-size:3.4em;
+  }
+
+  h3 {
+    font-size:2.8em;
+  }
+
+  h4 {
+    font-size:2.2em;
+  }
+
+  label {
+    font-size:2em;
+  }
+
+  p {
+    font-size:1.8em;
+  }
+
+  a {
+    font-size:1.8em;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  input, textarea {
+    font-size:1.2em
+  }
+
+  h1 {
+    font-size:3.2em;
+  }
+
+  h2 {
+    font-size:2.5em;
+  }
+
+  h3 {
+    font-size:2em;
+  }
+
+  h4 {
+    font-size:1.6em;
+  }
+
+  label {
+    font-size:1.2em;
+  }
+
+  p {
+    font-size:1em;
+  }
+
+  a {
+    font-size:1em;
+  }
+}
